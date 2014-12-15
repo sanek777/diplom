@@ -91,7 +91,6 @@ class interface:
     def __call__(self, event):
         self.ax.plot(event.xdata,event.ydata,'ro')
         [quad_num,param] = self.mesh.locate_point([event.xdata,event.ydata],[-1, -1])
-        print(quad_num)
         if (not np.isnan(quad_num[0])):
             #param = self.mesh.find_parameter(np.add(quad_num,[0,1]),quad_num,np.add(quad_num,[1,0]),np.add(quad_num,[1,1]),[event.xdata,event.ydata])
             #self.ax.annotate('{}'.format([ceil(param[0]*1000)/1000.0, ceil(param[1]*1000)/1000.0]), xy=(event.xdata,event.ydata),

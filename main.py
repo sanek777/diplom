@@ -6,4 +6,4 @@ N = 8
 img=mpimg.imread('C:\\Users\\Alex\\Desktop\\shrilanka.png')
 mesh = quad_mesh(N, True)
 mesh.count_weights()
-inter = interface(mesh, img, False)
+inter = interface(mesh, img, True)
